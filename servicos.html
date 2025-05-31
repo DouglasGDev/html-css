@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligência Artificial</title>
+
+    <!--Estilo da página-->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/images/logo_empresa.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+
+    <header class="container-cabecalho">
+        <a href="index.html">
+            <img src="assets/images/logo_empresa.png" alt="logo da empresa" title="Inteligência Artificial">
+        </a>
+        <h3>Inteligência Artificial</h3>
+    </header>
+
+    <!--Navegação-->
+
+    <nav class="container-navegacao">
+        <a href="index.html">Quem somos</a>
+        <a href="servicos.html">Nossos serviços</a>
+        <a href="contatos.html">Contatos</a>
+    </nav>
+
+    <!--Serviços-->
+
+    <section class="container-servicos">
+        <h1 class="text-center">Os nossos serviços</h1>
+
+        <article>
+
+            <h3>Soluções inovadoras para a sua empresa</h3>
+            <ul>
+
+                <li>Desenhamos novas soluções para o aumento de produtividade.</li>
+                <li>Aumentamos a performance dos colaboradores.</li>
+                <li>Aumento garantido de 20% nos lucros da empresa.</li>
+
+            </ul>   
+
+        </article>
+
+        <article>
+
+            <h3>Projetamos o futuro do seu negócio</h3>
+            <ol>
+
+                <li>Pensamos na melhor solução.</li>
+                <li>Desenvolvemos o produto em parceria com você.</li>
+                <li>Aplicamos a solução na empresa.</li>
+                <li>Fazemos o monitoramento do processo.</li>
+
+            </ol>
+        </article>
+
+
+    </section>
+
+
+    <!--Ver serviços ou contatos-->
+    <section class="container-servicos-contatos">
+        <h1>Obtenha mais informações na área de serviço e entre em contato conosco.</h1>
+        <div class="botoes-servicos-contatos">
+            <a href="contatos.html">Contatos</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        Inteligência Artificial &copy; <span id="ano">Ano atual</span> | &reg; Todos os direitos reservados.
+    </footer>
+
+    <script>
+        //Javscript pegar ano atual
+        const anoAtual = new Date().getFullYear();
+        document.getElementById("ano").textContent = `${anoAtual}`;
+    </script>
+
+</body>
+
+</html>
