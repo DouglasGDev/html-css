@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligência Artificial</title>
+
+    <!--Estilo da página-->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/images/logo_empresa.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+
+    <header class="container-cabecalho">
+        <a href="index.html">
+            <img src="assets/images/logo_empresa.png" alt="logo da empresa" title="Inteligência Artificial">
+        </a>
+        <h3>Inteligência Artificial</h3>
+    </header>
+
+    <!--Navegação-->
+
+    <nav class="container-navegacao">
+        <a href="index.html">Quem somos</a>
+        <a href="servicos.html">Nossos serviços</a>
+        <a href="contatos.html">Contatos</a>
+    </nav>
+
+    <!--Quem somos-->
+
+    <section class="container-quem-somos">
+        <article class="servico">
+            <img src="assets/images/icon_ai.png" class="icone" alt="icone" title="Inteligência Artificial" >
+            <p class="servico-texto">
+                Somos especialistas em <span class="servico-texto-realce">Inteligência Artificial (AI)</span><br>
+                Trabalhamos para encontrar soluções tecnologicamente inteligentes para todas as áreas empresariais.
+            </p>
+        </article>
+
+        <article class="servico">
+            <img src="assets/images/icon_lab.png" class="icone" alt="icone" title="Laboratório moderno" >
+            <p class="servico-texto">
+                Os nossos laboratórios são os mais modernos da atualidade.
+            </p>
+        </article>
+
+        <article class="servico">
+            <img src="assets/images/icon_computer.png" class="icone" alt="icone" title="Programadores experientes" >
+            <p class="servico-texto">
+                Os nossos colaboradores são os técnicos mais experientes do mercado.
+            </p>
+        </article>
+    </section>
+
+    <!--Ver serviços ou contatos-->
+    <section class="container-servicos-contatos">
+        <h1>Obtenha mais informações na área de serviço e entre em contato conosco.</h1>
+        <div class="botoes-servicos-contatos">
+            <a href="servicos.html">Ver serviços</a>
+            <a href="contatos.html">Contatos</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        Inteligência Artificial &copy; <span id="ano">Ano atual</span> | &reg; Todos os direitos reservados.
+    </footer>
+
+    <script>
+        //Javscript pegar ano atual
+        const anoAtual = new Date().getFullYear();
+        document.getElementById("ano").textContent = `${anoAtual}`;
+    </script>
+
+</body>
+
+</html>
