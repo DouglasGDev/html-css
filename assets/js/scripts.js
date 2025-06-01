@@ -1,33 +1,33 @@
-function carregaDocumento(arquivo, target, callback)
-{
-    var el = document.querySelector(target);
+    async function carregaDocumento(arquivo, target) {
+        const el = document.querySelector(target);
+        if (!el) return;
 
-    // Se o elemento não existir então não requisita
-    if (!el) return;
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", arquivo, true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 300) {
-            el.innerHTML = xhr.responseText;
-
-            // Chama o callback depois de carregar o HTML
-            if (typeof callback === "function") {
-                callback();
-            }
+        try {
+            const resposta = await fetch(arquivo);
+            if (!resposta.ok) throw new Error("Erro ao carregar " + arquivo);
+            const conteudo = await resposta.text();
+            el.innerHTML = conteudo;
+        } catch (erro) {
+            console.error(erro);
         }
-    };
-
-    xhr.send(null);
-}
-
-// Usa o callback para atualizar o ano depois que o rodapé for carregado
-carregaDocumento("./assets/template/cabecalho.html", "#mainheader");
-carregaDocumento("./assets/template/rodape.html", "#mainfooter", 
-    function () {
-    const anoAtual = new Date().getFullYear();
-    const spanAno = document.getElementById("ano");
-    if (spanAno) {
-        spanAno.textContent = anoAtual;
     }
-});
+
+    async function inicializarPagina() {
+        document.body.style.visibility = "hidden";
+
+        await carregaDocumento("./assets/template/cabecalho.html", "#mainheader");
+        await carregaDocumento("./assets/template/rodape.html", "#mainfooter");
+
+        // Atualiza o ano
+        const anoAtual = new Date().getFullYear();
+        const spanAno = document.getElementById("ano");
+        if (spanAno) {
+            spanAno.textContent = anoAtual;
+        }
+
+        // Mostra a página depois de tudo carregado
+        document.body.style.visibility = "visible";
+    }
+
+    // Inicia tudo
+    inicializarPagina();
