@@ -18,20 +18,7 @@
 
     <!-- Cabeçalho -->
 
-    <header class="container-cabecalho">
-        <a href="index.html">
-            <img src="assets/images/logo_empresa.png" alt="logo da empresa" title="Inteligência Artificial">
-        </a>
-        <h3>Inteligência Artificial</h3>
-    </header>
-
-    <!--Navegação-->
-
-    <nav class="container-navegacao">
-        <a href="index.html">Quem somos</a>
-        <a href="servicos.html">Nossos serviços</a>
-        <a href="contatos.html">Contatos</a>
-    </nav>
+    <header id="mainheader"></header>
 
     <!--Serviços-->
 
@@ -47,7 +34,7 @@
                 <li>Aumentamos a performance dos colaboradores.</li>
                 <li>Aumento garantido de 20% nos lucros da empresa.</li>
 
-            </ul>   
+            </ul>
 
         </article>
 
@@ -77,15 +64,9 @@
     </section>
 
     <!-- Rodapé -->
-    <footer class="footer">
-        Inteligência Artificial &copy; <span id="ano">Ano atual</span> | &reg; Todos os direitos reservados.
-    </footer>
+    <footer id="mainfooter"></footer>
 
-    <script>
-        //Javscript pegar ano atual
-        const anoAtual = new Date().getFullYear();
-        document.getElementById("ano").textContent = `${anoAtual}`;
-    </script>
+    <script src="assets/js/scripts.js"></script>
 
 </body>
 
