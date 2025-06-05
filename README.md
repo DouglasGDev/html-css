@@ -1,0 +1,1 @@
+Site de teste e um bot do geminmi mas não interage com o site, é apenas para pesquisar. Colocar a sua chave de api nas configurações do arquivo bot.js. PS: roda com liverserver, não precisa de dependencias.
