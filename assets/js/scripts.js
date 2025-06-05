@@ -14,7 +14,7 @@
 
     async function inicializarPagina() {
         document.body.style.visibility = "hidden";
-
+        await carregaDocumento("./assets/template/bot.html", "#mainbot");
         await carregaDocumento("./assets/template/cabecalho.html", "#mainheader");
         await carregaDocumento("./assets/template/rodape.html", "#mainfooter");
 
@@ -29,5 +29,4 @@
         document.body.style.visibility = "visible";
     }
 
-    // Inicia tudo
     inicializarPagina();

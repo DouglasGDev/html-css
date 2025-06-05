@@ -176,7 +176,7 @@ body {
     font-weight: 100;
     width: 40%;
     margin: auto;
-    color: #fff;    
+    color: #fff;
     margin-bottom: 20px;
     border: 1px solid #105088;
     background-color: #08253f;
@@ -191,3 +191,21 @@ body {
     color: #00a2ff;
     margin-bottom: 20px;
 }
+
+  .chatbot-frame {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    border: none;
+    z-index: 9999;
+    display: block; /* ou block, dependendo do estado */
+  }
+
+  .chatbot-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
