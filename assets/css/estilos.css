@@ -1,3 +1,5 @@
+@media screen and (min-width: 375px) {
+
 /*Estilos da minha página web*/
 
 * {
@@ -30,7 +32,7 @@ body {
 
 .container-cabecalho h3 {
     font-weight: 600;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #1190FF;
 }
 
@@ -62,10 +64,10 @@ body {
 
 .container-quem-somos .servico {
     float: center;
-    margin: 60px auto;
+    margin: 40px auto;
     background-color: #061f35;
     width: 50%;
-    padding: 50px;
+    padding: 40px;
     border-radius: 10px;
     text-align: center;
 }
@@ -91,18 +93,18 @@ body {
 
 .container-servicos-contatos {
     background-color: #082946;
-    padding: 80px;
+    padding: 60px;
     text-align: center;
 }
 
 .container-servicos-contatos .botoes-servicos-contatos {
-    padding: 60px;
+    padding: 30px;
     text-align: center;
 }
 
 .botoes-servicos-contatos a {
     display: block;
-    max-width: 200px;
+    max-width: 100px;
     text-decoration: none;
     font-size: 1.2em;
     background-color: #008eb9;
@@ -138,7 +140,7 @@ body {
 }
 
 .container-servicos h1 {
-    font-size: 3em;
+    font-size: 1.5em;
     color: #fff;
     margin-bottom: 20px;
 }
@@ -149,20 +151,20 @@ body {
 }
 
 .container-servicos article {
-    width: 40%;
+    width: 80%;
     margin: auto;
     float: center;
 }
 
 .container-servicos li {
     margin-bottom: 20px;
-    margin-left: 50px;
+    margin-left: 30px;
     color: #fff;
 }
 
 .container-contatos {
     background-color: #05192a;
-    padding: 80px;
+    padding: 60px;
 }
 
 .container-contatos h1 {
@@ -174,7 +176,7 @@ body {
 .container-contatos h3 {
     font-size: 1.5em;
     font-weight: 100;
-    width: 40%;
+    width: 60%;
     margin: auto;
     color: #fff;
     margin-bottom: 20px;
@@ -186,7 +188,7 @@ body {
 
 .container-contatos .contatos {
     display: block;
-    font-size: 2em;
+    font-size: 1.4em;
     text-decoration: none;
     color: #00a2ff;
     margin-bottom: 20px;
@@ -211,58 +213,8 @@ body {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 400px) {
 
-    /*Navegação*/
-    .container-navegacao {
-        text-align: center;
-        padding: 10%;
-    }
 
-    .container-navegacao a {
-        margin: 0px 10%;
-        padding: 0px 10%;
-    }
-
-    /*Botoes*/
-    .container-servicos-contatos .botoes-servicos-contatos {
-        padding: 30px;
-    }
-
-    .botoes-servicos-contatos a {
-        max-width: 200px;
-        padding: 10px 50px;
-        margin: 5px auto;
-        border-radius: 5px;
-    }
-
-    /*Serviços*/
-    .container-servicos {
-        font-size: 1.1em;
-        padding: 40px;
-    }
-
-    .container-servicos h1 {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-    }
-
-    .container-servicos article {
-        width: 80%;
-        margin: 0px auto;
-        float: center;
-    }
-
-    .container-servicos li {
-        margin-bottom: 20px;
-        margin-left: 15px;
-
-    }
-
-    .container-servicos-contatos {
-        padding: 60px;
-        text-align: center;
-    }
 
     
 }
