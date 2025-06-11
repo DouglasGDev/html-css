@@ -192,7 +192,7 @@ body {
     margin-bottom: 20px;
 }
 
-  .chatbot-frame {
+.chatbot-frame {
     position: fixed;
     bottom: 90px;
     right: 20px;
@@ -200,12 +200,69 @@ body {
     height: 500px;
     border: none;
     z-index: 9999;
-    display: block; /* ou block, dependendo do estado */
-  }
+    display: block;
+    /* ou block, dependendo do estado */
+}
 
-  .chatbot-frame iframe {
+.chatbot-frame iframe {
     width: 100%;
     height: 100%;
     border: none;
     border-radius: 10px;
-  }
+}
+
+@media screen and (max-width: 400px) {
+
+    /*Navegação*/
+    .container-navegacao {
+        text-align: center;
+        padding: 10%;
+    }
+
+    .container-navegacao a {
+        margin: 0px 10%;
+        padding: 0px 10%;
+    }
+
+    /*Botoes*/
+    .container-servicos-contatos .botoes-servicos-contatos {
+        padding: 30px;
+    }
+
+    .botoes-servicos-contatos a {
+        max-width: 200px;
+        padding: 10px 50px;
+        margin: 5px auto;
+        border-radius: 5px;
+    }
+
+    /*Serviços*/
+    .container-servicos {
+        font-size: 1.1em;
+        padding: 40px;
+    }
+
+    .container-servicos h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .container-servicos article {
+        width: 80%;
+        margin: 0px auto;
+        float: center;
+    }
+
+    .container-servicos li {
+        margin-bottom: 20px;
+        margin-left: 15px;
+
+    }
+
+    .container-servicos-contatos {
+        padding: 60px;
+        text-align: center;
+    }
+
+    
+}
